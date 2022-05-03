@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "873014202350",
+    "project_id": "e-wallet-60366",
+    "storage_bucket": "e-wallet-60366.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873014202350:android:b9a7aff36ca999d27fc8ff",
+        "android_client_info": {
+          "package_name": "com.jestoni.e_wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873014202350-1f92ob9fisqk7hhcaf7j1ajl7lno0mrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALuiXGg_eEGmnXgC8OC2HyX6F_uyxt1DE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873014202350-1f92ob9fisqk7hhcaf7j1ajl7lno0mrq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
