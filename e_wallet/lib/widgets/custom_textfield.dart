@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField(
@@ -6,13 +7,17 @@ class CustomTextField extends StatelessWidget {
       this.controller,
       required this.title,
       this.obsureText = false,
-      this.hintText})
+      this.hintText,
+      this.inputFormatters,
+      this.inputType})
       : super(key: key);
 
   final TextEditingController? controller;
   final String title;
   final bool obsureText;
   final String? hintText;
+  final List<TextInputFormatter>? inputFormatters;
+  final TextInputType? inputType;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -30,6 +35,8 @@ class CustomTextField extends StatelessWidget {
           controller: controller,
           obscureText: obsureText,
           cursorColor: Colors.black,
+          inputFormatters: inputFormatters,
+          keyboardType: inputType,
           decoration: InputDecoration(
               hintText: hintText,
               hintStyle: TextStyle(

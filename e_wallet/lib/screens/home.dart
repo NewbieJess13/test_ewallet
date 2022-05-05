@@ -1,4 +1,5 @@
 import 'package:e_wallet/providers/database_provider.dart';
+import 'package:e_wallet/router/router.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -70,7 +71,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   spacing: 10,
                   children: [
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        const CashInScreenRoute().show(context);
+                      },
                       child: Container(
                         height: 60,
                         width: 60,

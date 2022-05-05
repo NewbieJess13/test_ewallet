@@ -9,11 +9,8 @@ class Database {
   Stream<dynamic> getUserBalance() {
     print(uid);
     try {
-      Stream snapshot = _firestore
-          .collection('users')
-          .doc('wHGsmbQgtmoUR8NO02i8')
-          .get()
-          .asStream();
+      Stream snapshot =
+          _firestore.collection('users').doc(uid).get().asStream();
 
       return snapshot;
     } catch (e) {
